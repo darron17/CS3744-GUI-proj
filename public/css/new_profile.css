@@ -1,0 +1,69 @@
+/* Styles for Edit profile page and Signup page */
+
+/* Formats the whole content area for the Edit and Signup page */
+#content {
+  padding-left: 25px;
+}
+
+/* Formats the headings */
+#content h2 {
+  float: left;
+  width: 100%;
+  text-decoration: underline;
+}
+
+/* Lines the inputs up */
+#content input {
+  display: block;
+}
+
+/* Adds a margin to the select */
+#content select {
+  margin-bottom: 25px;
+}
+
+/* Formats the edit button */
+#content input.editBtn {
+  width: 143px;
+  background-color: white;
+  border: 3px solid purple;
+  color: purple;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Formats the edit button when in focus */
+#content input.editBtn:focus {
+  background-color: purple;
+  color: white;
+}
+
+/* When mouse hovers over navigation options, the button changes */
+#content input.editBtn:hover {
+  background-color: purple;
+  color: white;
+}
+
+/* Formats the signup button */
+#content input.signupBtn {
+  width: 85px;
+  background-color: white;
+  border: 3px solid purple;
+  color: purple;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* Formats the signup button when in focus */
+#content input.signupBtn:focus {
+  background-color: purple;
+  color: white;
+}
+
+/* When mouse hovers over navigation options, the button changes */
+#content input.signupBtn:hover {
+  background-color: purple;
+  color: white;
+}

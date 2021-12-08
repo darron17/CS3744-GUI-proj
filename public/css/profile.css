@@ -1,0 +1,38 @@
+/* Style changes for the "Profile" pages */
+
+/* Formats all the content on the left side of the page */
+#content {
+  float: left;
+  width: 60%;
+  padding-left: 25px;
+  padding-right: 50px;
+}
+
+/* Formats the headers */
+#content h2 {
+  width: 60%;
+  text-decoration: underline;
+}
+
+/* Formats the edit button */
+#content input.editBtn {
+  width: 143px;
+  background-color: white;
+  border: 3px solid purple;
+  color: purple;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* When one of the navigation buttons are selected then the button changes */
+#content input.editBtn:focus {
+  background-color: purple;
+  color: white;
+}
+
+/* When mouse hovers over navigation options, the option becomes highlighted */
+#content input.editBtn:hover {
+  background-color: purple;
+  color: white;
+}

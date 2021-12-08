@@ -1,0 +1,134 @@
+/* Styles for the "New-Post" page */
+
+/* Sets the size of the title input box in the "New_Post" page */
+#content-left input.title {
+  width: 100%;
+}
+
+/* Sets the size and font of the body textarea in the "New_Post" page */
+#content-left textarea.body {
+  width: 100%;
+  font-family: sans-serif;
+  height: 150px;
+  resize: none;
+}
+
+/* Formats the "Description" heading */
+#content-left h2.description {
+  float: left;
+  width: 40%;
+}
+
+/* Formats the "Links" heading */
+#content-left h2.links {
+  float: left;
+  width: 30%;
+}
+
+/* Formats the "Image" heading */
+#content-left h2.image {
+  float: left;
+  width: 30%;
+}
+
+/* Formats the textbox in the "Description" section */
+#content-left textarea.descBox {
+  width: 25%;
+  font-family: sans-serif;
+  resize: none;
+}
+
+/*  Formats the button in the "Links" section */
+#content-left textarea.linksBox {
+  width: 25%;
+  font-family: sans-serif;
+  resize: none;
+  position: relative;
+  left: 13%;
+}
+
+/* Formats the button in the "Images" section */
+#content-left textarea.imageBox {
+  width: 25%;
+  font-family: sans-serif;
+  resize: none;
+  position: relative;
+  left: 16%;
+}
+
+/* Formats the submit button */
+#content-left input.submitBtn {
+  display: block;
+  position: relative;
+  top: 3%;
+  background-color: white;
+  border: 3px solid purple;
+  color: purple;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 40px;
+}
+
+
+/* When one of the navigation buttons are selected then the button changes */
+#content-left input.submitBtn:focus {
+  background-color: purple;
+  color: white;
+}
+
+/* Formats the message that appears when it has negative text */
+div.negative {
+  background-color: salmon;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Formats the message that appears when it has positive text */
+div.positive {
+  background-color: lightgreen;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+/* Changes that apply to the larger sized version of the website that
+  overrides the attributes in the first part if addressing the same part of the page */
+@media all and (min-width: 768px) {
+  /* Styles for "New_Post" page */
+
+  /* Formats the "Description" heading */
+  #content-left h2.description {
+    float: left;
+    width: 30%;
+  }
+
+  /* Formats the "Links" heading */
+  #content-left h2.links {
+    float: left;
+    width: 30%;
+  }
+
+  /* Formats the "Image" heading */
+  #content-left h2.image {
+    float: left;
+    width: 30%;
+  }
+
+  /*  Formats the button in the "Links" section */
+  #content-left textarea.linksBox {
+    width: 25%;
+    font-family: sans-serif;
+    resize: none;
+    position: relative;
+    left: 4%;
+  }
+
+  /* Formats the button in the "Images" section */
+  #content-left textarea.imageBox {
+    width: 25%;
+    font-family: sans-serif;
+    resize: none;
+    position: relative;
+    left: 9%;
+  }
+}

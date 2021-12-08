@@ -1,0 +1,24 @@
+/* Style changes for the "Admin" page */ 
+
+#content input {
+  width: 200px;
+  background-color: white;
+  border: 3px solid purple;
+  color: purple;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+/* When one of the navigation buttons are selected then the button changes */
+#content input:focus {
+  background-color: purple;
+  color: white;
+}
+
+/* When mouse hovers over navigation options, the option becomes highlighted */
+#content input:hover {
+  background-color: purple;
+  color: white;
+}

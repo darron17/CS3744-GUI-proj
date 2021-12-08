@@ -1,0 +1,315 @@
+/* This upper section contains style changes for the version of the app that's
+displayed on a smaller screen that apply to all the pages */
+
+/* Style changes for the header, header-left, and header-right */
+
+/* Header attributes for all pages */
+#header {
+  font-family: Georgia, serif;
+  background-color: purple;
+  color: white;
+  height: 250px;
+}
+
+/* Makes the font color of the navigation menu white like the header */
+#header a {
+  color: inherit;
+}
+
+/* Formats the user info tag on the top right for the "Post_Alt" page */
+#header-right p.alt_user {
+  display: inline;
+  position: relative;
+  top: 15px;
+}
+
+/* Formats the user info tag on the top right for the "Post" page */
+#header-right p {
+  display: inline;
+  position: relative;
+  bottom: 20px;
+}
+
+/* Formats the text that appears when user logs in successfully */
+div.success {
+  background-color: lightgreen;
+  padding: 5px; margin: 5px;
+}
+
+/* Style changes for the navigation menu
+
+/* Gets rid of the padding on the left */
+#primary-nav {
+  padding-left: 0;
+}
+
+/* Formats the navigation list in white boxes */
+#primary-nav li {
+  display: block;
+  border: 1px solid white;
+  padding: 3px;
+}
+
+/* When mouse hovers over navigation options, the option becomes highlighted */
+#primary-nav li:hover {
+  background-color: white;
+  color: purple;
+}
+
+/* When one of the navigation buttons are selected then the button changes */
+#primary-nav a.selected {
+  background-color: white;
+  color: purple;
+  padding: 3px;
+}
+
+/* Style changes for content, content-left, and content-right */
+
+
+/* Formats the "Notifications" list */
+#content-right ul {
+  border: 1px solid black;
+  padding-right: 25px;
+}
+
+/* Adds padding for the list items in the "Notifications" list */
+#content-right li {
+  padding: 3px;
+}
+
+/* Formats the Bell icon */
+#content-right img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+/* Changes font for the content of the page */
+#content {
+  font-family: sans-serif;
+  clear: both;
+}
+
+/* Formats all the content on the left side of the page */
+#content-left {
+  float: left;
+  width: 60%;
+  padding-left: 25px;
+  padding-right: 50px;
+}
+
+/* Formats the h2 headings in the left content; size, underlines */
+#content-left h2 {
+  width: 60%;
+  text-decoration: underline;
+}
+
+/* Formats the h3 headers on "My_Page" */
+#content-left  h3.section_headers {
+  width: 30%;
+  text-decoration: underline;
+}
+
+
+/* Formats the area around the search bar */
+#search_bar_area {
+  padding-top: 16px;
+}
+
+
+/* Formats the search bars in the "News" page */
+#search_bar_area input.search_bar {
+  float: right;
+  width: 30%;
+  margin-right: 0px;
+  margin-top: -60px;
+}
+
+/* Formats the search bar button */
+#search_bar_area input.search_btn {
+  float: right;
+  background-color: white;
+  border: 3px solid purple;
+  color: purple;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 17px;
+  margin-top: 40px;
+}
+
+
+/* When one of the navigation buttons are selected then the button changes */
+#search_bar_area input.search_btn:focus {
+  background-color: purple;
+  color: white;
+}
+
+/* Changes the search bar button when hovered over */
+#search_bar_area input.search_btn:hover {
+  background-color: purple;
+  color: white;
+}
+
+/* Formats the "News" page */
+#sortType {
+  width: 50%;
+  float: left;
+}
+
+/* Formats the sorting buttons */
+#sortType .active {
+  background-color: purple;
+  color: white;
+  padding: 3px;
+}
+
+/* Formats the "Trending" and "Most Recent" list */
+#sortType li {
+  display: block;
+  padding: 3px;
+}
+
+/* Formats the sorting buttons */
+#sortType input {
+  width: 117px;
+  background-color: white;
+  border: 3px solid purple;
+  color: purple;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 17px;
+}
+
+/* When one of the navigation buttons are selected then the button changes */
+#sortType input:focus {
+  background-color: purple;
+  color: white;
+}
+
+/* When mouse hovers over navigation options, the option becomes highlighted */
+#sortType input:hover {
+  background-color: purple;
+  color: white;
+  padding: 3px;
+}
+
+/* Formats the images that appears in the "Home" page */
+#content-left img {
+  padding-right: 50px;
+}
+
+/* Formats the size of the right side of the content */
+#content-right {
+  float: left;
+  width: 25%;
+}
+
+/* Style change for the footer */
+
+/* Formats the footer at the bottom of every page */
+#footer {
+  font-family: sans-serif;
+  padding-top: 25px;
+  padding-left: 25px;
+  clear: both;
+}
+
+
+
+/* Changes that apply to the larger sized version of the website that
+  overrides the attributes in the first part if addressing the same part of the page */
+@media all and (min-width: 768px) {
+
+  /* Style changes for the header */
+
+  /* Changes the header size */
+  #header {
+    height: 125px;
+  }
+
+  /* Formats for the left part of the header */
+  #header-left {
+    float: left;
+    width: 45%;
+    padding-left: 10px;
+  }
+
+  /* Formats the right side of the header */
+  #header-right {
+    display: inline;
+    float: right;
+    width: 30%;
+    padding-top: 20px;
+    padding-right: 50px;
+    text-align: right;
+  }
+
+  /* Formats the text in the right side of the header */
+  #header-right p {
+    display: block;
+  }
+
+  /* Formats the right side of the header for the "Post_Alt" page */
+  #header-right p.alt_user {
+    top: 50px;
+  }
+
+  /* Style change for the navigation menu */
+
+  /* Formats the navigation menu to be in a horizontal line */
+  #primary-nav li {
+    display: inline;
+  }
+
+  /* Style changes for content-left and content-right */
+
+  /* Formats the content on the left */
+  #content-left {
+    float: left;
+    width: 70%;
+    padding-left: 25px;
+    padding-right: 50px;
+  }
+
+  /* Formats the search bars in the "News" page */
+  #search_bar_area input.search_bar {
+    margin-right: 15px;
+    margin-top: 7px;
+  }
+
+  #search_bar_area input.search_btn {
+    margin-top: 0px;
+  }
+
+  /* Formats the sorting type list to be in a horizontal line */
+  #sortType li {
+    display: inline;
+  }
+
+  /* Formats the content on the right */
+  #content-right {
+    float: right;
+    width: 20%;
+    padding-right: 50px;
+  }
+
+  /* Formats the images on the right side of the content */
+  #content-right img {
+    float: left;
+    padding-top: 25px;
+  }
+
+  /* Formats the "Notifications" label on the "My_Page" page */
+  #content-right h3 {
+    padding-right: 50px;
+    padding-top: 25px;
+  }
+
+  /* Formats the list of notifications on the "My_Page" page */
+  #content-right ul {
+    float: left;
+  }
+
+
+}

@@ -1,0 +1,35 @@
+Options -Indexes
+
+RewriteEngine on
+
+# News Controller
+RewriteRule ^Home$ app/controller/NewsController.php?route=home
+RewriteRule ^News$ app/controller/NewsController.php?route=news
+RewriteRule ^News/like/process$ app/controller/NewsController.php?route=likeProcess
+RewriteRule ^News/sort/process$ app/controller/NewsController.php?route=sort [QSA]
+RewriteRule ^News/Search/process$ app/controller/NewsController.php?route=searchProcess [QSA]
+RewriteRule ^My_Page$ app/controller/NewsController.php?route=my_page
+RewriteRule ^My_Page/process$ app/controller/NewsController.php?route=delete
+RewriteRule ^My_Page/deleteBubble/process$ app/controller/NewsController.php?route=deleteBubble
+RewriteRule ^My_Page/editBubble/process$ app/controller/NewsController.php?route=editBubble
+RewriteRule ^Edit(\d+)$ app/controller/NewsController.php?route=edit&storyID=$1
+RewriteRule ^Edit/process(\d+)$ app/controller/NewsController.php?route=change&storyID=$1
+RewriteRule ^New_Post$ app/controller/NewsController.php?route=new_post
+RewriteRule ^New_Post/process$ app/controller/NewsController.php?route=add
+RewriteRule ^Post(\d+)$ app/controller/NewsController.php?route=post&storyID=$1
+RewriteRule ^Post_Alt(\d+)$ app/controller/NewsController.php?route=alt&storyID=$1
+RewriteRule ^Admin$ app/controller/NewsController.php?route=admin
+RewriteRule ^posts/comment/process$ app/controller/NewsController.php?route=commentProcess
+RewriteRule ^My_Page/viz$ app/controller/NewsController.php?route=viz
+
+
+# Account Controller
+RewriteRule ^Signup$ app/controller/AccountController.php?route=signup
+RewriteRule ^Signup/process$ app/controller/AccountController.php?route=addUser
+RewriteRule ^Login$ app/controller/AccountController.php?route=login
+RewriteRule ^Login/Process$ app/controller/AccountController.php?route=loginProcess
+RewriteRule ^Logout$ app/controller/AccountController.php?route=logout
+RewriteRule ^User-([_0-9a-zA-Z]{3,40})$ app/controller/AccountController.php?route=profile&un=$1
+RewriteRule ^EditProfile-([0-9a-zA-Z]{3,40})$ app/controller/AccountController.php?route=edit&username=$1
+RewriteRule ^EditProfile/process$ app/controller/AccountController.php?route=change
+RewriteRule ^ChangeRole/process-([0-9a-zA-Z]{0,40})-([0-9a-zA-Z]{0,40})$ app/controller/AccountController.php?route=roleChange&userID=$1&role=$2

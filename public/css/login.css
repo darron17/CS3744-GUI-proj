@@ -1,0 +1,47 @@
+/* Style changes for the "Login" page */
+
+/* Formats the input labels for the username/password input boxes */
+#login p {
+  padding-left: 25px;
+}
+
+/* Formats the username input box */
+#username {
+  display: block;
+  position: relative;
+  left: 25px;
+}
+
+/* Formats the password input box */
+#password {
+  display: block;
+  position: relative;
+  left: 25px;
+}
+
+/* Formats the login button */
+#loginButton {
+  width: 75px;
+  background-color: white;
+  border: 3px solid purple;
+  color: purple;
+  padding: 3px 10px;
+  text-align: center;
+  font-size: 17px;
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+/* When mouse hovers over navigation options, the option becomes highlighted */
+#loginButton:hover {
+  background-color: purple;
+  color: white;
+}
+
+
+/* Formats the header */
+#loginHeader {
+  width: 60%;
+  padding-left: 25px;
+  text-decoration: underline;
+}

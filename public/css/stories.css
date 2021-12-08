@@ -1,0 +1,51 @@
+/* This contains style changes for any pages that display news stories */
+
+/* Formatting for stories; size, bottom border line, padding */
+div.story {
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  padding-top: 15px;
+}
+
+/* Formats the like buttons for every story; size, text and background color */
+div.story button {
+  float: left;
+  width: 75px;
+  background-color: white;
+  border: 3px solid red;
+  color: red;
+  padding: 10px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Formats the likes counter for every story */
+div.story h3.likes {
+  float: left;
+  width: 10%;
+  text-align: center;
+}
+
+/* Formats the title of every story */
+div.story h3.title {
+  float: left;
+  width: 60%;
+}
+
+/* Formats the author text for every story */
+div.story p.author {
+  float: left;
+  padding-top: 5px;
+}
+
+/* Formats the short description text for every story */
+div.story p.desc {
+  clear: both;
+}
+
+/* Formats the text that appears when a story has been liked; green background, padding */
+div.success {
+  background-color: lightgreen;
+  padding: 5px; margin: 5px;
+}

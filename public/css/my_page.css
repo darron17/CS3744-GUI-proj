@@ -1,0 +1,74 @@
+/* Style changes for aspects on the "My_Page" page */
+
+/* Formats the button that create a new post on the "My_Page" page */
+div.newPostBtn img {
+  float: left;
+  padding-top: 25px;
+}
+
+/* Formats the text next to the button that creates a new post on the "My_Page" page */
+div.newPostBtn h3 {
+  float: left;
+  padding-top: 10px;
+}
+
+
+/* Formats the edit buttons */
+#content-left input.edit {
+  width: 75px;
+  background-color: red;
+  border: 3px solid white;
+  color: white;
+  padding: 10px 7px;
+  font-size: 20px;
+  float: right;
+}
+
+/* Formats the delete buttons */
+#content-left input.delete {
+  width: 75px;
+  background-color: red;
+  border: 3px solid white;
+  color: white;
+  padding: 10px 7px;
+  font-size: 20px;
+  float: right;
+}
+
+/* Visualization section, style changes are from d3 source code */
+#mainBubble {
+      background: #fff;
+      box-shadow: 0 0 4px rgba(0,0,0,0);
+      font: 10px sans-serif;
+      height: 800px;
+      position: relative;
+      width: 80%;
+      top: 30px;
+}
+
+#mainBubble svg {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+#mainBubble circle.topBubble {
+  fill: #aaa;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+
+circle.selected-circle {
+  stroke: purple;
+  stroke-width: 10px;
+}
+
+/* Changes that apply to the larger sized version of the website that
+  overrides the attributes in the first part if addressing the same part of the page */
+@media all and (min-width: 768px) {
+  /* Formats the buttons */
+  #content-left input {
+    float: left;
+  }
+
+}
